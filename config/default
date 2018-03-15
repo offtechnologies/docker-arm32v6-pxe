@@ -1,0 +1,14 @@
+DEFAULT vesamenu.c32
+MENU TITLE Network boot
+MENU RESOLUTION 1024 768
+MENU BACKGROUND image.png
+
+
+label local
+  menu label ^Boot from local drive
+  menu default
+  localboot 0
+
+label xyz
+  menu boot.netboot.xyz
+  kernel /netboot.xyz.lkrn

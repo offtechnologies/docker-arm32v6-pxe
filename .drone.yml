@@ -1,0 +1,8 @@
+pipeline:
+  docker:
+    image: plugins/docker
+    repo: offtechnologies/docker-arm32v6-pxe
+    registry: docker.io
+    tags:
+      - latest
+    secrets: [ docker_username, docker_password ]
