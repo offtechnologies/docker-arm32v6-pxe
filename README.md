@@ -17,5 +17,6 @@ sudo docker run --name pxe -d \
     -p 69:69/udp \
     -p 67:67/udp \
     --net=host \
+    --cap-add net_admin \
     offtechnologies/docker-arm32v6-pxe:6.03
 ```
